@@ -1,0 +1,228 @@
+/** CSS 3-22-15 by Arthur Mate **/
+
+@import "http://fonts.googleapis.com/css?family=Montserrat:400,700";
+@import "http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic";
+
+body, p, ul, li, a {
+  font-family:'Lato',sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:Montserrat,sans-serif;
+  color:#025B9B;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+.fullWidth{
+    width:100%;
+    margin:0 auto;
+}
+h1.title{
+  font-weight: 700;
+}
+.whatido{
+  padding:75px 150px;
+}
+.portfolio{
+  padding:75px 150px;
+  background:#f9f9f9;
+}
+p{
+  font-size:1em;
+  color:#333;
+}
+/** font awesome icons **/
+span.fa-image{
+	position: relative;
+}
+span.fa-image:before{
+	content: "\f03e";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:100%;
+    height:100%;
+    display:none;
+  }
+ li.fa-linked span, li.fa-email span, li.fa-twitter span, li.fa-skype span{
+  position: relative;
+}
+li.fa-linked span:before{
+  content: "\f08c";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #025B9B;
+    font-size: 1.5em;
+    padding-right: 0.5em;
+    position: absolute;
+    top: -8px;
+    left:-30px;
+   
+  }
+  li.fa-email span:before{
+  content: "\f0e0";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #025B9B;
+    font-size: 1.3em;
+    padding-right: 0.5em;
+    position: absolute;
+    top: -8px;
+    left:-30px;
+    
+  } 
+  li.fa-twitter span:before{
+  content: "\f081";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #025B9B;
+    font-size: 1.5em;
+    padding-right: 0.5em;
+    position: absolute;
+    top: -8px;
+    left:-30px;
+    
+  }
+  li.fa-skype span:before{
+  content: "\f17e";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #025B9B;
+    font-size: 1.5em;
+    padding-right: 0.5em;
+    position: absolute;
+    top: -8px;
+    left:-30px;
+    
+  }
+/** end of font awesome icons css **/
+.portfolio-css a:hover{
+	background:#fff;
+	opacity:.7;
+}
+.portfolio-css a:hover span.fa-image:before{
+ 
+}
+.portfolio-css li p{
+  margin-top:15px;
+  margin-bottom:0;
+}
+.portfolio-box{
+  padding:20px;
+  background:#fff;
+  border-radius:5px;
+}
+a.button{
+  text-transform: uppercase;
+  padding:10px 15px;
+  font-family: Montserrat,sans-serif;
+  font-size:1em;
+}
+a.backtotop{
+  font-size:.5em;
+  padding:5px 10px;
+  font-weight: 700;
+  border-radius:5px;
+}
+.header-area{
+  background:#19B4E7;
+}
+  .header-area h4{
+    color:#f0f0f0;
+    margin:0;
+    padding:0;
+  }
+  .header-area .logo{
+    padding:20px;
+  }
+  .header-area a{
+    margin:0;
+  }
+  .header-area .menu{
+    padding:20px 0;
+  }
+.footer-area{
+  background:#19B4E7;
+}
+.footer-area p{
+  font-size:.8em;
+  color:#f0f0f0;
+  font-family: Montserrat,sans-serif;
+  margin:0;
+  padding:20px 0;
+}
+.contactme h4{
+  font-weight:700;
+}
+.contactme{
+  padding:75px 150px;
+}
+.contactme ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+.contactme ul li{
+  margin:5px 0 5px 30px;
+
+}
+p.disclaimer{
+  color:#999;
+  font-size:.8em;
+  text-align: center;
+}
+
+/** responsive css **/
+
+@media only screen and (max-width: 40em) { 
+  .whatido, .portfolio, .contactme{
+    padding:20px 40px;
+  }
+  .header-area .menu{
+    margin:0 auto;
+    width:90%;
+  }
+  .logo h4{
+    text-align: center;
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .whatido, .portfolio, .contactme{
+    padding:40px 90px;
+  }
+}
+
+/** end of responsive css**/
