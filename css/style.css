@@ -279,7 +279,7 @@ p.disclaimer{
   }
   .header-area .menu{
     margin:0 auto;
-    width:90%;
+    width:85%;
   }
   .logo h4{
     text-align: center;
@@ -292,11 +292,21 @@ p.disclaimer{
     height:250px;
     overflow: hidden;
   }
+  .menu{
+
+  }
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .whatido, .portfolio, .contactme{
     padding:40px 90px;
+  }
+  .portfolio-css img{
+    height:auto;
+  }
+  .portfolio-css .box-cont{
+    height:250px;
+    overflow: hidden;
   }
 }
 
