@@ -167,6 +167,7 @@ li.fa-linked span:before{
   width:100%;
   background-color:rgba(0,0,0,0.5);
   transition:all .3s ease;
+  cursor:pointer;
 }
   .box-hov a{
       display: block;
@@ -307,8 +308,11 @@ p.disclaimer{
 /** responsive css **/
 
 @media only screen and (max-width: 375px) { 
-  .whatido, .portfolio, .contactme{
+  .whatido, .portfolio{
     padding:20px 40px;
+  }
+  .contactme{
+    padding:20px;
   }
   .header-area .menu{
     margin:0 auto;
