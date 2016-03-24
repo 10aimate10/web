@@ -239,14 +239,27 @@ a.backtotop{
     color:#f0f0f0;
     margin:0;
     padding:0;
+    cursor: pointer;
+    transition:all .75s ease;
+    text-shadow:2px 2px 5px #777;
   }
   .header-area .logo{
     padding:20px;
   }
   .header-area .logo h4{}
-  .header-area .logo i{}
+  .header-area .logo i{
+    color:#025B9B;
+    transition:all .75s ease;
+  }
   .header-area .logo span{
     color:#025B9B;
+    transition:all .75s ease;
+  }
+  .header-area .logo h4:hover{
+    color:#025B9B;
+  }
+  .header-area .logo h4:hover span, .header-area .logo h4:hover i{
+    color:#f0f0f0;
   }
   .header-area a{
     margin:0;
