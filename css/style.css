@@ -42,6 +42,24 @@ h1.title{
 .whatido ul li{
   font-size:16px;
 }
+  .ma-skillz{}
+  .ma-skillz span{
+    display:inline-block;
+    padding:5px 10px;
+    margin-right:10px;
+    margin-bottom: 10px;
+    background-color:#19B4E7;
+    border:1px solid #025B9B;
+    border-radius:5px;
+    box-shadow:2px 2px 5px #000;
+    cursor:pointer;
+    color:#fff;
+    transition:all .5s ease;
+  }
+  .ma-skillz span:hover{
+    background-color:#fff;
+    color:#19B4E7;
+  }
 .portfolio{
   padding:75px 150px;
   background:#f9f9f9;
@@ -251,6 +269,7 @@ a.backtotop{
 }
 .contactme{
   padding:75px 150px;
+  background-color:#f9f9f9;
 }
 .contactme ul{
   list-style: none;
