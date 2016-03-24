@@ -285,6 +285,13 @@ p.disclaimer{
     text-align: center;
     font-size: 2em;
   }
+  .portfolio-css img{
+    height:auto;
+  }
+  .portfolio-css .box-cont{
+    height:250px;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
