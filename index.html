@@ -233,40 +233,68 @@
               <p>my latest notable web projects</p>
             </div>
             <div class="content-section">
-              <div class="proj-box">
+              <div class="proj-box one">
                 <img src="images/aimport.jpg">
-                aim port
-                http://10aimate10.github.io/web/
+                <div class="proj-overlay">
+                  <h1>A.I.M. Portfolio</h1>
+                  <div class="link">
+                    <a href="http://10aimate10.github.io/web/" target="_blank">link</a>
+                  </div>
+                </div>
               </div><!-- end of proj box -->
-              <div class="proj-box">
+              <div class="proj-box two">
                 <img src="images/jedmars.jpg">
-                jedd and mars
-                http://jeddandmars.com/
+                <div class="proj-overlay">
+                  <h1>Jedd and Mars</h1>
+                  <div class="link">
+                    <a href="http://jeddandmars.com/" target="_blank">link</a>
+                  </div>
+                </div>  
               </div><!-- end of proj box -->
               <div class="proj-box">
                 <img src="images/avalon.jpg">
-                avalon uk
-                http://avalonuk.com/
+                <div class="proj-overlay">
+                  <h1>Avalon UK</h1>
+                  <div class="link">
+                    <a href="http://avalonuk.com/" target="_blank">link</a>
+                  </div>  
+                </div>
               </div><!-- end of proj box -->            
               <div class="proj-box">
                 <img src="images/cozy.jpg">
-                cozydeck
-                https://cozydeck.com/
+                <div class="proj-overlay">
+                  <h1>CozyDeck</h1>
+                  <div class="link">
+                    <a href="https://cozydeck.com/" target="_blank">link</a>
+                  </div>
+                </div>
               </div><!-- end of proj box -->
               <div class="proj-box">
                 <img src="images/mchughs.jpg">
-                mchughs
-                http://www.mchughs.co.nz/
+                <div class="proj-overlay">
+                  <h1>McHughs NZ</h1>
+                  <div class="link">
+                    <a href="http://www.mchughs.co.nz/" target="_blank">link</a>
+                  </div>
+                </div>
               </div><!-- end of proj box -->
               <div class="proj-box">
                 <img src="images/carall.jpg">
-                carall
-                http://www.carall.com.au/
+                <div class="proj-overlay">
+                  <h1>Carall AU</h1>
+                  <div class="link">
+                    <a href="http://www.carall.com.au/" target="_blank">link</a>
+                  </div>
+                </div>
               </div><!-- end of proj box -->
               <div class="proj-box">
                 <img src="images/baradene.jpg">
-                baradene alumnae
-                http://www.baradenealumnae.co.nz/
+                <div class="proj-overlay">
+                  <h1>Baradene Alumnae</h1>
+                  <div class="link">
+                    <a href="http://www.baradenealumnae.co.nz/" target="_blank">link</a>
+                  </div>
+                </div>
               </div><!-- end of proj box -->  
             </div><!-- end of content section -->          
           </div>
@@ -294,6 +322,17 @@
       $('button.navi-btn').click(function(){
         $('.mobile-nav').toggle();
       });
+      $('.proj-box').hover(function(){
+        $(this).addClass('hovered');
+        $(this).removeClass('nohover');
+        $('.hovered .proj-overlay').toggle();
+        $(this).mouseleave(function(){
+          $(this).removeClass('hovered');
+          $(this).addClass('nohover');
+          $('.nohover .proj-overlay').toggle();
+        });
+      });
+      
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
