@@ -106,10 +106,12 @@ a:hover{
 }
 .social-i ul li a{
 	margin:0 10px;
+
 }
 .social-i ul li a i{
 	font-size:2em;
 	color:#f9ff00;
+	transition: .3s all ease;
 }
 .social-i ul li a:hover i{
 	color:#fff;
@@ -329,6 +331,7 @@ a:hover{
 }
 .social-box ul li a i{
 	color:#777;
+	transition: .3s all ease;
 }
 .contact-section p{
 	color:#777;
